@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 # --- Configs ---
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 CSV_PATH = "data/workorders.csv"
-TARGET_ASSET = "HVAC-321"
 TOP_K = 10
 load_dotenv()
 
@@ -28,6 +27,7 @@ dim = embeddings[0].shape[0]
 index = faiss.IndexFlatL2(dim)
 index.add(embeddings)
 
+TARGET_ASSET = input(">>> Provide of the Asset# which you want to use for Summarization: ")
 # --- Retrieve Top-K Relevant WOs ---
 target_df = df[df['assetnum'] == TARGET_ASSET].sort_values("wonum")
 if target_df.empty:

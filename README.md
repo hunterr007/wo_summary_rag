@@ -3,4 +3,5 @@ Summarize long WO histories into digestible insights for technicians before they
 
 #python3 app.py
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/80fb3d51-c366-41d9-9894-f324a942a27e)
+

@@ -1,4 +1,4 @@
-Summarize long WO histories into digestible insights for technicians before they start a job.
+Summarize long WO histories into digestible insights and perform Incident Analysis.
 
 
 #python3 app.py
